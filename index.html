@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrik & Francesca | 5 March 2027 - Lecce, Italy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sand: {
+                            50: '#fdfbf7',
+                            100: '#f7f3eb',
+                            200: '#efe6d5',
+                            300: '#e3d2b4',
+                            400: '#d5b98f',
+                            500: '#c59d68',
+                        },
+                        olive: {
+                            600: '#606c38',
+                            800: '#283618',
+                        },
+                        terracotta: {
+                            500: '#bc6c25',
+                            600: '#a3571a',
+                        },
+                        gold: {
+                            400: '#d4af37',
+                            500: '#aa7c11',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .puglia-texture {
+            background-color: #fdfbf7;
+            background-image: radial-gradient(#e3d2b4 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-sand-50 text-stone-800 antialiased puglia-texture selection:bg-sand-300">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-sand-50/90 backdrop-blur-md border-b border-sand-200 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#hero" class="font-serif text-2xl font-semibold tracking-wide text-stone-800">P & F</a>
+                
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wider uppercase text-stone-600">
+                    <a href="#story" class="hover:text-terracotta-500 transition-colors" data-i18n="nav.story">Ons Verhaal</a>
+                    <a href="#program" class="hover:text-terracotta-500 transition-colors" data-i18n="nav.program">Programma</a>
+                    <a href="#travel" class="hover:text-terracotta-500 transition-colors" data-i18n="nav.travel">Locatie & Reis</a>
+                    <a href="#gallery" class="hover:text-terracotta-500 transition-colors" data-i18n="nav.gallery">Galerij</a>
+                </div>
+
+                <!-- Language Switcher -->
+                <div class="flex items-center space-x-1 sm:space-x-2 border border-sand-300 rounded-full p-1 bg-white/80 shadow-sm text-xs font-semibold">
+                    <button onclick="setLanguage('nl')" id="lang-nl" class="px-2.5 py-1 rounded-full transition-all">NL</button>
+                    <button onclick="setLanguage('en')" id="lang-en" class="px-2.5 py-1 rounded-full transition-all">EN</button>
+                    <button onclick="setLanguage('it')" id="lang-it" class="px-2.5 py-1 rounded-full transition-all">IT</button>
+                    <button onclick="setLanguage('hu')" id="lang-hu" class="px-2.5 py-1 rounded-full transition-all">HU</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center ml-2">
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="text-stone-700 hover:text-stone-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-sand-50 border-b border-sand-200 px-4 pt-2 pb-6 space-y-3 text-center text-sm font-medium tracking-wider uppercase text-stone-700 shadow-lg">
+            <a href="#story" onclick="toggleMobileMenu()" class="block py-2 hover:text-terracotta-500" data-i18n="nav.story">Ons Verhaal</a>
+            <a href="#program" onclick="toggleMobileMenu()" class="block py-2 hover:text-terracotta-500" data-i18n="nav.program">Programma</a>
+            <a href="#travel" onclick="toggleMobileMenu()" class="block py-2 hover:text-terracotta-500" data-i18n="nav.travel">Locatie & Reis</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block py-2 hover:text-terracotta-500" data-i18n="nav.gallery">Galerij</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-screen hero-bg flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <p class="font-serif italic text-lg sm:text-2xl text-sand-200 tracking-widest uppercase" data-i18n="hero.subtitle">Wij gaan trouwen</p>
+            <h1 class="font-serif text-5xl sm:text-7xl md:text-8xl font-light tracking-wide drop-shadow-md">
+                Patrik <span class="font-serif italic text-sand-300">&</span> Francesca
+            </h1>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-base sm:text-xl tracking-widest uppercase text-sand-100 font-light pt-2">
+                <span class="flex items-center gap-2"><i class="fa-regular fa-calendar text-sand-300"></i> <span data-i18n="hero.date">5 Maart 2027</span></span>
+                <span class="hidden sm:inline text-sand-400">•</span>
+                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-sand-300"></i> Lecce, Puglia, Italy</span>
+            </div>
+
+            <!-- COUNTDOWN TIMER -->
+            <div class="pt-8 max-w-xl mx-auto">
+                <div class="grid grid-cols-4 gap-2 sm:gap-4 bg-black/30 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/20 shadow-xl">
+                    <div class="flex flex-col">
+                        <span id="cd-days" class="font-serif text-2xl sm:text-4xl md:text-5xl font-normal text-sand-200">00</span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-stone-300 mt-1" data-i18n="timer.days">Dagen</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span id="cd-hours" class="font-serif text-2xl sm:text-4xl md:text-5xl font-normal text-sand-200">00</span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-stone-300 mt-1" data-i18n="timer.hours">Uren</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span id="cd-minutes" class="font-serif text-2xl sm:text-4xl md:text-5xl font-normal text-sand-200">00</span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-stone-300 mt-1" data-i18n="timer.minutes">Minuten</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span id="cd-seconds" class="font-serif text-2xl sm:text-4xl md:text-5xl font-normal text-sand-200">00</span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-stone-300 mt-1" data-i18n="timer.seconds">Seconden</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-6">
+                <a href="#travel" class="inline-block bg-sand-300/90 hover:bg-sand-400 text-stone-900 font-medium px-8 py-3 rounded-full uppercase tracking-wider text-xs transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5" data-i18n="hero.cta">
+                    Bekijk Locatie & Details
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY SECTION -->
+    <section id="story" class="py-24 px-4 max-w-5xl mx-auto">
+        <div class="text-center space-y-4 mb-16">
+            <span class="text-terracotta-500 font-serif italic text-xl" data-i18n="story.tag">Welkom</span>
+            <h2 class="font-serif text-4xl sm:text-5xl text-stone-800 font-normal" data-i18n="story.title">Ons Verhaal</h2>
+            <div class="w-16 h-0.5 bg-sand-400 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative group">
+                <div class="absolute -inset-2 rounded-2xl bg-gradient-to-r from-sand-300 to-terracotta-500 opacity-20 blur-lg group-hover:opacity-30 transition duration-500"></div>
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Patrik and Francesca" class="relative rounded-2xl shadow-xl w-full object-cover h-[420px]">
+            </div>
+            <div class="space-y-6 text-stone-600 leading-relaxed font-light">
+                <p class="text-lg italic font-serif text-stone-700" data-i18n="story.quote">
+                    "Liefde kent geen grenzen, en onze reis brengt ons naar het hart van Puglia."
+                </p>
+                <p data-i18n="story.p1">
+                    We kijken er ontzettend naar uit om onze speciale dag met jullie te vieren in het prachtige Lecce! Van onze eerste ontmoeting tot al onze reizen samen, hebben we toeleven naar dit moment.
+                </p>
+                <p data-i18n="story.p2">
+                    Lecce, de 'Florence van het Zuiden', heeft een bijzondere plek in ons hart veroverd met haar barokke architectuur, warme gastvrijheid en heerlijke eten. We nodigen jullie van harte uit om op 5 maart 2027 samen met ons de liefde te vieren.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAM / SCHEDULE -->
+    <section id="program" class="py-24 bg-sand-100/70 border-y border-sand-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-terracotta-500 font-serif italic text-xl" data-i18n="program.tag">5 Maart 2027</span>
+                <h2 class="font-serif text-4xl sm:text-5xl text-stone-800 font-normal" data-i18n="program.title">Het Programma</h2>
+                <div class="w-16 h-0.5 bg-sand-400 mx-auto"></div>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-1/2 before:-ml-px before:w-0.5 before:bg-sand-300 before:hidden md:before:block">
+                
+                <!-- Timeline Item 1 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="w-full md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-sand-200">
+                            <span class="text-terracotta-500 font-serif font-semibold text-xl">14:30</span>
+                            <h3 class="font-serif text-2xl text-stone-800 mt-1" data-i18n="program.item1.title">Ceremonie</h3>
+                            <p class="text-stone-600 text-sm mt-2" data-i18n="program.item1.desc">Aankomst van de gasten gevolgd door de officiële huwelijksvoltrekking in een historische kerk in het hart van Lecce.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-sand-300 border-4 border-sand-50 hidden md:flex items-center justify-center text-stone-700 shadow">
+                        <i class="fa-solid fa-ring text-xs"></i>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12"></div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="w-full md:w-1/2 md:pr-12"></div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-sand-300 border-4 border-sand-50 hidden md:flex items-center justify-center text-stone-700 shadow">
+                        <i class="fa-solid fa-wine-glass text-xs"></i>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12 mb-4 md:mb-0">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-sand-200">
+                            <span class="text-terracotta-500 font-serif font-semibold text-xl">16:30</span>
+                            <h3 class="font-serif text-2xl text-stone-800 mt-1" data-i18n="program.item2.title">Aperitivo & Proost</h3>
+                            <p class="text-stone-600 text-sm mt-2" data-i18n="program.item2.desc">Traditionele Italiaanse Aperitivo met lokale lekkernijen en Prosecco in de tuin van de Masseria.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="w-full md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-sand-200">
+                            <span class="text-terracotta-500 font-serif font-semibold text-xl">19:30</span>
+                            <h3 class="font-serif text-2xl text-stone-800 mt-1" data-i18n="program.item3.title">Diner</h3>
+                            <p class="text-stone-600 text-sm mt-2" data-i18n="program.item3.desc">Een meergangendiner met het beste uit de apulische keuken en uitgelezen wijnen.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-sand-300 border-4 border-sand-50 hidden md:flex items-center justify-center text-stone-700 shadow">
+                        <i class="fa-solid fa-utensils text-xs"></i>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12"></div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="w-full md:w-1/2 md:pr-12"></div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-sand-300 border-4 border-sand-50 hidden md:flex items-center justify-center text-stone-700 shadow">
+                        <i class="fa-solid fa-music text-xs"></i>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-sand-200">
+                            <span class="text-terracotta-500 font-serif font-semibold text-xl">22:30</span>
+                            <h3 class="font-serif text-2xl text-stone-800 mt-1" data-i18n="program.item4.title">Feest & Taart</h3>
+                            <p class="text-stone-600 text-sm mt-2" data-i18n="program.item4.desc">Aansnijden van de bruidstaart, openingsdans en feest tot in de late uurtjes met live muziek.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & TRAVEL INFO -->
+    <section id="travel" class="py-24 px-4 max-w-6xl mx-auto">
+        <div class="text-center space-y-4 mb-16">
+            <span class="text-terracotta-500 font-serif italic text-xl" data-i18n="travel.tag">Puglia, Italië</span>
+            <h2 class="font-serif text-4xl sm:text-5xl text-stone-800 font-normal" data-i18n="travel.title">Locatie & Reisinformatie</h2>
+            <div class="w-16 h-0.5 bg-sand-400 mx-auto"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Travel Card 1: Flights -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-sand-200 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-full bg-sand-100 flex items-center justify-center text-terracotta-500 text-xl mb-6">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-stone-800 mb-3" data-i18n="travel.flights.title">Vliegen naar Puglia</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="travel.flights.desc">
+                        De dichtstbijzijnde luchthavens zijn <strong>Brindisi (BDS)</strong> op ca. 30 minuten rijden en <strong>Bari (BRI)</strong> op ca. 1,5 uur rijden van Lecce. Beide luchthavens hebben goede directe vluchten vanuit diverse Europese steden.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Travel Card 2: Accommodation -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-sand-200 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-full bg-sand-100 flex items-center justify-center text-terracotta-500 text-xl mb-6">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-stone-800 mb-3" data-i18n="travel.hotels.title">Verblijf in Lecce</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="travel.hotels.desc">
+                        Lecce biedt een breed scala aan prachtige boetiekhotels, B&B's en authentieke Masseria's. We raden aan om in het historische centrum (Centro Storico) te verblijven om optimaal te genieten van de sfeer.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Travel Card 3: Lecce & Map -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-sand-200 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-full bg-sand-100 flex items-center justify-center text-terracotta-500 text-xl mb-6">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-stone-800 mb-3" data-i18n="travel.lecce.title">Ontdek Lecce</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-6" data-i18n="travel.lecce.desc">
+                        Bekend om haar goudkleurige barokke gebouwen, heerlijke lokale keukens en charmante steegjes. Neem gerust wat extra dagen om Puglia te verkennen!
+                    </p>
+                </div>
+                <a href="https://maps.google.com/?q=Lecce,Italy" target="_blank" class="inline-flex items-center justify-center gap-2 bg-stone-800 hover:bg-stone-900 text-white px-6 py-3 rounded-xl text-xs uppercase tracking-wider font-medium transition-all shadow-md">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <span data-i18n="travel.mapbtn">Open in Google Maps</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section id="gallery" class="py-24 bg-sand-100/70 border-t border-sand-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-terracotta-500 font-serif italic text-xl" data-i18n="gallery.tag">Herinneringen</span>
+                <h2 class="font-serif text-4xl sm:text-5xl text-stone-800 font-normal" data-i18n="gallery.title">Foto Galerij</h2>
+                <div class="w-16 h-0.5 bg-sand-400 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-2xl shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Moment 1" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80" alt="Moment 2" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Moment 3" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-stone-900 text-stone-400 text-center text-sm border-t border-stone-800">
+        <div class="max-w-4xl mx-auto px-4 space-y-4">
+            <p class="font-serif text-2xl text-sand-200 font-light tracking-wide">Patrik & Francesca</p>
+            <p class="text-xs uppercase tracking-widest text-stone-500">5 March 2027 • Lecce, Italy</p>
+            <div class="pt-4 text-xs text-stone-600">
+                <p>&copy; 2027 Patrik & Francesca. <span data-i18n="footer.rights">Alle rechten voorbehouden.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TRANSLATIONS & INTERACTION SCRIPT -->
+    <script>
+        // Dictionary for Multilingual Support
+        const translations = {
+            nl: {
+                "nav.story": "Ons Verhaal",
+                "nav.program": "Programma",
+                "nav.travel": "Locatie & Reis",
+                "nav.gallery": "Galerij",
+                "hero.subtitle": "Wij gaan trouwen",
+                "hero.date": "5 Maart 2027",
+                "hero.cta": "Bekijk Locatie & Details",
+                "timer.days": "Dagen",
+                "timer.hours": "Uren",
+                "timer.minutes": "Minuten",
+                "timer.seconds": "Seconden",
+                "story.tag": "Welkom",
+                "story.title": "Ons Verhaal",
+                "story.quote": "\"Liefde kent geen grenzen, en onze reis brengt ons naar het hart van Puglia.\"",
+                "story.p1": "We kijken er ontzettend naar uit om onze speciale dag met jullie te vieren in het prachtige Lecce! Van onze eerste ontmoeting tot al onze reizen samen, hebben we toeleven naar dit moment.",
+                "story.p2": "Lecce, de 'Florence van het Zuiden', heeft een bijzondere plek in ons hart veroverd met haar barokke architectuur, warme gastvrijheid en heerlijke eten. We nodigen jullie van harte uit om op 5 maart 2027 samen met ons de liefde te vieren.",
+                "program.tag": "5 Maart 2027",
+                "program.title": "Het Programma",
+                "program.item1.title": "Ceremonie",
+                "program.item1.desc": "Aankomst van de gasten gevolgd door de officiële huwelijksvoltrekking in een historische kerk in het hart van Lecce.",
+                "program.item2.title": "Aperitivo & Proost",
+                "program.item2.desc": "Traditionele Italiaanse Aperitivo met lokale lekkernijen en Prosecco in de tuin van de Masseria.",
+                "program.item3.title": "Diner",
+                "program.item3.desc": "Een meergangendiner met het beste uit de apulische keuken en uitgelezen wijnen.",
+                "program.item4.title": "Feest & Taart",
+                "program.item4.desc": "Aansnijden van de bruidstaart, openingsdans en feest tot in de late uurtjes met live muziek.",
+                "travel.tag": "Puglia, Italië",
+                "travel.title": "Locatie & Reisinformatie",
+                "travel.flights.title": "Vliegen naar Puglia",
+                "travel.flights.desc": "De dichtstbijzijnde luchthavens zijn Brindisi (BDS) op ca. 30 minuten rijden en Bari (BRI) op ca. 1,5 uur rijden van Lecce. Beide luchthavens hebben goede directe vluchten vanuit diverse Europese steden.",
+                "travel.hotels.title": "Verblijf in Lecce",
+                "travel.hotels.desc": "Lecce biedt een breed scala aan prachtige boetiekhotels, B&B's en authentieke Masseria's. We raden aan om in het historische centrum (Centro Storico) te verblijven om optimaal te genieten van de sfeer.",
+                "travel.lecce.title": "Ontdek Lecce",
+                "travel.lecce.desc": "Bekend om haar goudkleurige barokke gebouwen, heerlijke lokale keukens en charmante steegjes. Neem gerust wat extra dagen om Puglia te verkennen!",
+                "travel.mapbtn": "Open in Google Maps",
+                "gallery.tag": "Herinneringen",
+                "gallery.title": "Foto Galerij",
+                "footer.rights": "Alle rechten voorbehouden."
+            },
+            en: {
+                "nav.story": "Our Story",
+                "nav.program": "Schedule",
+                "nav.travel": "Location & Travel",
+                "nav.gallery": "Gallery",
+                "hero.subtitle": "We are getting married",
+                "hero.date": "March 5, 2027",
+                "hero.cta": "View Location & Details",
+                "timer.days": "Days",
+                "timer.hours": "Hours",
+                "timer.minutes": "Minutes",
+                "timer.seconds": "Seconds",
+                "story.tag": "Welcome",
+                "story.title": "Our Story",
+                "story.quote": "\"Love knows no borders, and our journey brings us to the heart of Puglia.\"",
+                "story.p1": "We are so excited to celebrate our special day with you in beautiful Lecce! From our first meeting to all our travels together, everything led up to this moment.",
+                "story.p2": "Lecce, the 'Florence of the South', captured our hearts with its Baroque architecture, warm hospitality, and delicious food. We warmly invite you to celebrate love with us on March 5, 2027.",
+                "program.tag": "March 5, 2027",
+                "program.title": "The Schedule",
+                "program.item1.title": "Ceremony",
+                "program.item1.desc": "Guest arrival followed by the wedding ceremony in a historic church in the heart of Lecce.",
+                "program.item2.title": "Aperitivo & Toast",
+                "program.item2.desc": "Traditional Italian Aperitivo with local delicacies and Prosecco in the Masseria garden.",
+                "program.item3.title": "Dinner",
+                "program.item3.desc": "A multi-course dinner featuring the best of Pugliese cuisine and fine local wines.",
+                "program.item4.title": "Party & Cake",
+                "program.item4.desc": "Cake cutting, first dance, and partying late into the night with live music.",
+                "travel.tag": "Puglia, Italy",
+                "travel.title": "Location & Travel Info",
+                "travel.flights.title": "Flights to Puglia",
+                "travel.flights.desc": "The closest airports are Brindisi (BDS), approx. 30 minutes drive, and Bari (BRI), approx. 1.5 hours drive from Lecce. Both airports offer great direct flight connections across Europe.",
+                "travel.hotels.title": "Stay in Lecce",
+                "travel.hotels.desc": "Lecce offers a wide selection of boutique hotels, B&Bs, and authentic Masserias. We recommend staying near the historic center (Centro Storico) for the best experience.",
+                "travel.lecce.title": "Discover Lecce",
+                "travel.lecce.desc": "Famous for its golden baroque architecture, delicious cuisine, and charming streets. Feel free to extend your stay and explore Puglia!",
+                "travel.mapbtn": "Open in Google Maps",
+                "gallery.tag": "Memories",
+                "gallery.title": "Photo Gallery",
+                "footer.rights": "All rights reserved."
+            },
+            it: {
+                "nav.story": "La Nostra Storia",
+                "nav.program": "Programma",
+                "nav.travel": "Posizione e Viaggio",
+                "nav.gallery": "Galleria",
+                "hero.subtitle": "Ci sposiamo",
+                "hero.date": "5 Marzo 2027",
+                "hero.cta": "Vedi Posizione e Dettagli",
+                "timer.days": "Giorni",
+                "timer.hours": "Ore",
+                "timer.minutes": "Minuti",
+                "timer.seconds": "Secondi",
+                "story.tag": "Benvenuti",
+                "story.title": "La Nostra Storia",
+                "story.quote": "\"L'amore non conosce confini e il nostro viaggio ci porta nel cuore della Puglia.\"",
+                "story.p1": "Siamo felicissimi di festeggiare il nostro giorno speciale con voi nella splendida Lecce! Dal nostro primo incontro ai nostri viaggi insieme, tutto ci ha portato a questo momento.",
+                "story.p2": "Lecce, la 'Firenze del Sud', ha conquistato i nostri cuori con la sua architettura barocca, la sua calda ospitalità e il suo cibo delizioso. Vi invitiamo di cuore a festeggiare l'amore con noi il 5 marzo 2027.",
+                "program.tag": "5 Marzo 2027",
+                "program.title": "Il Programma",
+                "program.item1.title": "Cerimonia",
+                "program.item1.desc": "Arrivo degli ospiti seguito dalla cerimonia nuziale in una chiesa storica nel cuore di Lecce.",
+                "program.item2.title": "Aperitivo e Brindisi",
+                "program.item2.desc": "Tradizionale aperitivo italiano con prelibatezze locali e Prosecco nel giardino della Masseria.",
+                "program.item3.title": "Cena",
+                "program.item3.desc": "Cena a più portate con il meglio della cucina pugliese e vini selezionati.",
+                "program.item4.title": "Festa e Torta",
+                "program.item4.desc": "Taglio della torta, primo ballo e festa fino a tarda notte con musica dal vivo.",
+                "travel.tag": "Puglia, Italia",
+                "travel.title": "Posizione e Viaggio",
+                "travel.flights.title": "Voli per la Puglia",
+                "travel.flights.desc": "Gli aeroporti più vicini sono Brindisi (BDS) a circa 30 minuti e Bari (BRI) a circa 1,5 ore da Lecce. Entrambi offrono ottimi collegamenti con molte città europee.",
+                "travel.hotels.title": "Soggiornare a Lecce",
+                "travel.hotels.desc": "Lecce offre una vasta scelta di boutique hotel, B&B e autentiche Masserie. Consigliamo di alloggiare nel Centro Storico per vivere appieno l'atmosfera.",
+                "travel.lecce.title": "Scopri Lecce",
+                "travel.lecce.desc": "Famosa per i suoi edifici barocchi in pietra leccese, la cucina tipica e i vicoli affascinanti. Approfittatene per esplorare la meravigliosa Puglia!",
+                "travel.mapbtn": "Apri in Google Maps",
+                "gallery.tag": "Ricordi",
+                "gallery.title": "Galleria Fotografica",
+                "footer.rights": "Tutti i diritti riservati."
+            },
+            hu: {
+                "nav.story": "Történetünk",
+                "nav.program": "Program",
+                "nav.travel": "Helyszín és Utazás",
+                "nav.gallery": "Galéria",
+                "hero.subtitle": "Összeházasodunk",
+                "hero.date": "2027. március 5.",
+                "hero.cta": "Helyszín és Részletek",
+                "timer.days": "Nap",
+                "timer.hours": "Óra",
+                "timer.minutes": "Perc",
+                "timer.seconds": "Másodperc",
+                "story.tag": "Üdvözlünk",
+                "story.title": "Történetünk",
+                "story.quote": "\"A szeretet nem ismer határokat, és az utunk Puglia szívébe vezet bennünket.\"",
+                "story.p1": "Nagyon izgatottak vagyunk, hogy veletek ünnepelhetjük ezt a különleges napot a gyönyörű Leccében! Az első találkozásunktól kezdve a közös utazásainkig minden ehhez a pillanathoz vezetett.",
+                "story.p2": "Lecce, a 'Dél Firenzéje', elvarázsolt minket barokk építészetével, meleg vendégszeretetével és isteni ételeivel. Szeretettel várunk titeket, hogy 2027. március 5-én együtt ünnepeljük a szerelmet.",
+                "program.tag": "2027. március 5.",
+                "program.title": "A Program",
+                "program.item1.title": "Cseremónia",
+                "program.item1.desc": "A vendégek érkezése, majd az esküvői szertartás egy történelmi templomban Lecce belvárosában.",
+                "program.item2.title": "Aperitivo & Koccintás",
+                "program.item2.desc": "Hagyományos olasz aperitivo helyi finomságokkal és Proseccóval a Masseria kertjében.",
+                "program.item3.title": "Vacsora",
+                "program.item3.desc": "Többfogásos vacsora a pugliai konyha legfinomabb fogásaival és válogatott helyi borokkal.",
+                "program.item4.title": "Buli & Torta",
+                "program.item4.desc": "Tortavágás, nyitótánc és késő estig tartó ünneplés élő zenével.",
+                "travel.tag": "Puglia, Olaszország",
+                "travel.title": "Helyszín és Utazás",
+                "travel.flights.title": "Repülés Pugliába",
+                "travel.flights.desc": "A legközelebbi repülőterek Brindisi (BDS) kb. 30 perc, és Bari (BRI) kb. 1,5 óra autóútra Lecce városától. Mindkét repülőtérre jó közvetlen járatok indulnak Európa-szerte.",
+                "travel.hotels.title": "Szállás Leccében",
+                "travel.hotels.desc": "Lecce számos csodás boutique hotelt, B&B-t és autentikus Masseriát kínál. Javasoljuk, hogy a történelmi belvárosban (Centro Storico) foglaljatok szállást.",
+                "travel.lecce.title": "Fedezd fel Leccét",
+                "travel.lecce.desc": "Híres az aranyló barokk épületeiről, finom ételeiről és hangulatos utcáiról. Nyugodtan hosszabbítsátok meg az utazást, és fedezzétek fel Pugliát!",
+                "travel.mapbtn": "Megnyitás Google Maps-en",
+                "gallery.tag": "Emlékek",
+                "gallery.title": "Fotógaléria",
+                "footer.rights": "Minden jog fenntartva."
+            }
+        };
+
+        // Current Language state
+        let currentLang = 'nl';
+
+        function setLanguage(lang) {
+            if (!translations[lang]) return;
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            // Update UI text content
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            // Update active language button styles
+            ['nl', 'en', 'it', 'hu'].forEach(l => {
+                const btn = document.getElementById(`lang-${l}`);
+                if (btn) {
+                    if (l === lang) {
+                        btn.className = "px-2.5 py-1 rounded-full bg-terracotta-500 text-white shadow-sm font-bold transition-all";
+                    } else {
+                        btn.className = "px-2.5 py-1 rounded-full text-stone-600 hover:text-stone-900 transition-all";
+                    }
+                }
+            });
+        }
+
+        // Countdown Timer Logic Target: March 5, 2027 00:00:00
+        const targetDate = new Date('2027-03-05T00:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('cd-days').textContent = days < 10 ? '0' + days : days;
+                document.getElementById('cd-hours').textContent = hours < 10 ? '0' + hours : hours;
+                document.getElementById('cd-minutes').textContent = minutes < 10 ? '0' + minutes : minutes;
+                document.getElementById('cd-seconds').textContent = seconds < 10 ? '0' + seconds : seconds;
+            } else {
+                document.getElementById('cd-days').textContent = '00';
+                document.getElementById('cd-hours').textContent = '00';
+                document.getElementById('cd-minutes').textContent = '00';
+                document.getElementById('cd-seconds').textContent = '00';
+            }
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        // Initialize on Load
+        window.addEventListener('DOMContentLoaded', () => {
+            setLanguage('nl');
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        });
+    </script>
+</body>
+</html>
