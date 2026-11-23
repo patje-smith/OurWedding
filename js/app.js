@@ -38,6 +38,3 @@ initializeI18n();
 initializeMobileMenu();
 markActiveNavigationLink();
 
-if (document.querySelector('.hero__countdown')) {
-  import('./countdown.js').then(({ initializeCountdown }) => initializeCountdown());
-}

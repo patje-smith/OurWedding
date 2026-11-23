@@ -4,6 +4,9 @@
   --color-sand-200: #efe6d5;
   --color-sand-300: #e3d2b4;
   --color-sand-400: #d5b98f;
+  --color-sand-500: #c59d68;
+  --color-olive-600: #606c38;
+  --color-olive-800: #283618;
   --color-stone-500: #78716c;
   --color-stone-600: #57534e;
   --color-stone-700: #44403c;
@@ -11,6 +14,8 @@
   --color-stone-900: #1c1917;
   --color-terracotta-500: #bc6c25;
   --color-terracotta-600: #a3571a;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #aa7c11;
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Montserrat", sans-serif;
   --shadow-sm: 0 1px 3px rgba(41, 37, 36, 0.08);

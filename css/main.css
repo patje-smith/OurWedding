@@ -40,6 +40,7 @@ button { font: inherit; }
 .button--dark:hover { background: var(--color-stone-900); }
 
 .section { max-width: 72rem; margin: auto; padding: 6rem 1.25rem; }
+.section--page { padding-top: 9rem; }
 .section--tinted { max-width: none; border-block: 1px solid var(--color-sand-200); background: rgba(247,243,235,.72); }
 .section__inner { max-width: 64rem; margin: auto; }
 .section__inner--wide { max-width: 72rem; }

@@ -1,4 +1,4 @@
-export function initializeCountdown() {
+function initializeCountdown() {
   const targetDate = new Date('2027-03-05T00:00:00').getTime();
   const fields = {
     days: document.getElementById('cd-days'),
@@ -22,3 +22,5 @@ export function initializeCountdown() {
   updateCountdown();
   window.setInterval(updateCountdown, 1000);
 }
+
+initializeCountdown();

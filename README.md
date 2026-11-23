@@ -17,21 +17,16 @@ js/countdown.js     March 5, 2027 countdown for the home page
 locales/*.json      English, Italian, and Hungarian translations
 ```
 
-## Colors
+## Design tokens
 
-- Sand 50: `#fdfbf7`
-- Sand 100: `#f7f3eb`
-- Sand 200: `#efe6d5`
-- Sand 300: `#e3d2b4`
-- Sand 400: `#d5b98f`
-- Terracotta: `#bc6c25`
-- Stone 800: `#292524`
-- Stone 900: `#1c1917`
+Defined in `css/variables.css`:
 
-## Typography
-
-- Serif: Cormorant Garamond
-- Sans serif: Montserrat
+- Sand: `--color-sand-50` `#fdfbf7`, `--color-sand-100` `#f7f3eb`, `--color-sand-200` `#efe6d5`, `--color-sand-300` `#e3d2b4`, `--color-sand-400` `#d5b98f`, `--color-sand-500` `#c59d68`
+- Olive: `--color-olive-600` `#606c38`, `--color-olive-800` `#283618`
+- Terracotta: `--color-terracotta-500` `#bc6c25`, `--color-terracotta-600` `#a3571a`
+- Gold: `--color-gold-400` `#d4af37`, `--color-gold-500` `#aa7c11`
+- Fonts: `--font-serif` (Cormorant Garamond), `--font-sans` (Montserrat)
+- Shadows: `--shadow-sm`, `--shadow-md`, `--shadow-xl`
 
 ## BEM Convention
 
@@ -60,10 +55,8 @@ ES modules require a web server. GitHub Pages provides this automatically. For l
 
 ## Instructions for Future AI Sessions
 
-- Preserve the existing Puglia-inspired sand, terracotta, stone, and olive visual tone.
-- Keep all pages static and build-tool-free.
-- Maintain English as the fallback and default language.
-- Keep navigation and footer markup consistent across all four pages.
-- Update every translation file together; never leave a key missing.
-- Use semantic HTML5 and ES6+ JavaScript.
-- Preserve Google Fonts, FontAwesome, Unsplash image URLs, and working cross-page links.
+- Keep this site static and build-tool-free; use semantic HTML and ES modules.
+- Keep English as the fallback and default language, with Italian and Hungarian translations.
+- Keep shared navigation and footer markup consistent on every page.
+- Add each translation key to every file in `locales/` and keep language switchers in sync.
+- Use BEM class names, preserve the Puglia visual style and existing external assets, and keep navigation links pointed to the `.html` pages.
