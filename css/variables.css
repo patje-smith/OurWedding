@@ -1,0 +1,24 @@
+:root {
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #f7f3eb;
+  --color-sand-200: #efe6d5;
+  --color-sand-300: #e3d2b4;
+  --color-sand-400: #d5b98f;
+  --color-stone-500: #78716c;
+  --color-stone-600: #57534e;
+  --color-stone-700: #44403c;
+  --color-stone-800: #292524;
+  --color-stone-900: #1c1917;
+  --color-terracotta-500: #bc6c25;
+  --color-terracotta-600: #a3571a;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --shadow-sm: 0 1px 3px rgba(41, 37, 36, 0.08);
+  --shadow-md: 0 10px 25px rgba(41, 37, 36, 0.12);
+  --shadow-xl: 0 20px 40px rgba(41, 37, 36, 0.18);
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-full: 9999px;
+  --content-width: 72rem;
+  --transition: 180ms ease;
+}
