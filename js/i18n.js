@@ -1,4 +1,4 @@
-const SUPPORTED_LANGUAGES = ['en', 'nl', 'it', 'hu'];
+const SUPPORTED_LANGUAGES = ['en', 'it', 'hu'];
 const STORAGE_KEY = 'wedding-language';
 
 export function getStoredLanguage() {

@@ -24,11 +24,13 @@ function initializeMobileMenu() {
 }
 
 function markActiveNavigationLink() {
-  const page = window.location.pathname.split('/').pop() || 'index.html';
+  const page = new URL(window.location.href).pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('[data-page]').forEach((link) => {
     const active = link.dataset.page === page;
     link.classList.toggle('nav__link--active', active);
+    link.classList.toggle('mobile-menu__link--active', active);
     if (active) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
   });
 }
 

@@ -89,6 +89,7 @@ button { font: inherit; }
   .mobile-menu { position: absolute; inset: 5rem 0 auto; display: none; border-bottom: 1px solid var(--color-sand-200); padding: .75rem 1.25rem 1.25rem; background: var(--color-sand-50); text-align: center; box-shadow: var(--shadow-md); }
   .mobile-menu--open { display: grid; gap: .25rem; }
   .mobile-menu__link { padding: .65rem; font-size: .78rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+  .mobile-menu__link--active { color: var(--color-terracotta-500); }
   .hero { min-height: 52rem; }
   .hero__meta { flex-direction: column; align-items: center; gap: .35rem; }
   .hero__meta-dot { display: none; }
