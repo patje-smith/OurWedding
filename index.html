@@ -68,10 +68,29 @@
         </div>
       </div>
     </section>
+
+    <section id="journey" class="section section--tinted">
+      <div class="section__inner section__inner--wide">
+        <div class="journey__stats" aria-live="polite">
+          <article class="journey-card">
+            <div class="journey-card__heading">
+              <h3 class="journey-card__title" data-i18n="journey.combined">We travelled together</h3>
+              <p class="journey-card__value"><span data-stat="combined-km">—</span> km</p>
+            </div>
+            <div class="journey-progress" role="progressbar" aria-label="Combined distance compared with Earth's circumference" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <span class="journey-progress__fill" data-progress="combined"></span>
+            </div>
+            <p class="journey-card__detail"><span data-stat="combined-percent">—</span>% <span data-i18n="journey.globe">of Earth's circumference</span></p>
+            <p id="journey-status" class="journey-card__status" role="status"></p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer"><p class="footer__names">Patrik &amp; Francesca</p><p class="footer__date">March 5, 2027 • Lecce, Italy</p><p class="footer__copyright">&copy; 2027 Patrik &amp; Francesca. <span data-i18n="footer.rights">All rights reserved.</span></p></footer>
   <script type="module" src="js/countdown.js"></script>
   <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/journey.js"></script>
 </body>
 </html>

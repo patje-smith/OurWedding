@@ -56,6 +56,17 @@ button { font: inherit; }
 .story__copy { color: var(--color-stone-600); line-height: 1.75; font-weight: 300; }
 .story__quote { color: var(--color-stone-700); font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; }
 
+.journey__stats { display: grid; grid-template-columns: minmax(0, 42rem); justify-content: center; }
+.journey-card { border: 1px solid var(--color-sand-200); border-radius: var(--radius-lg); padding: 1.5rem 1.75rem; background: rgba(255,255,255,.92); box-shadow: var(--shadow-sm); }
+.journey-card__heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.journey-card__title { margin: 0 0 .4rem; font-family: var(--font-serif); font-size: 1.45rem; font-weight: 400; }
+.journey-card__detail { margin: 0; color: var(--color-stone-500); font-size: .73rem; }
+.journey-card__value { flex: 0 0 auto; margin: 0; color: var(--color-stone-800); font-family: var(--font-sans); font-size: clamp(1.35rem, 3vw, 1.8rem); font-weight: 600; line-height: 1.2; }
+.journey-card__status { margin: .75rem 0 0; color: var(--color-stone-600); font-size: .75rem; }
+.journey-card__status:empty { display: none; }
+.journey-progress { height: .55rem; margin: 1rem 0 .45rem; overflow: hidden; border-radius: var(--radius-full); background: var(--color-sand-100); }
+.journey-progress__fill { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--color-sand-400), var(--color-terracotta-500)); transition: width 1.2s ease; }
+
 .timeline { position: relative; display: grid; gap: 2rem; }
 .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--color-sand-300); }
 .timeline__item { position: relative; display: grid; grid-template-columns: 1fr 1fr; }
@@ -97,6 +108,8 @@ button { font: inherit; }
   .hero__countdown { padding: .85rem; }
   .story { grid-template-columns: 1fr; }
   .story__image { height: 22rem; }
+  .journey__stats { grid-template-columns: minmax(0, 1fr); }
+  .journey-card__heading { align-items: flex-start; flex-direction: column; gap: .35rem; }
   .timeline::before, .timeline__marker { display: none; }
   .timeline__item { grid-template-columns: 1fr; }
   .timeline__item--left .timeline__card, .timeline__item--right .timeline__card { justify-self: stretch; grid-column: 1; text-align: left; }
@@ -106,4 +119,9 @@ button { font: inherit; }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-progress__fill { transition: none; }
+  html { scroll-behavior: auto; }
 }

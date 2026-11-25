@@ -5,17 +5,20 @@ A static, modular wedding website for GitHub Pages. The default language is Engl
 ## Structure
 
 ```text
-index.html          Hero, countdown, and Our Story
+index.html          Hero, countdown, Our Story, and the combined travel distance card
 program.html        Wedding-day timeline
 travel.html         Flights, accommodation, and map link
 gallery.html        Photo gallery
 css/variables.css   Design tokens: colors, fonts, radius, shadows
 css/main.css        Responsive BEM styles and layout
 js/app.js           Mobile menu, active navigation, and module startup
+js/journey.js       CSV-driven combined travel distance card
 js/i18n.js          JSON loading and localStorage language persistence
 js/countdown.js     March 5, 2027 countdown for the home page
 locales/*.json      English, Italian, and Hungarian translations
 ```
+
+The home page travel distance card reads the CSV travel log in the repository root. It locates the table header by its column names, so summary rows above the table are ignored.
 
 ## Design tokens
 
