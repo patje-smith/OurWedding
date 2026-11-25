@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest Corner | Patrik &amp; Francesca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="navbar__inner">
+      <a class="navbar__brand" href="index.html" aria-label="Patrik and Francesca home">P &amp; F</a>
+      <div class="navbar__desktop">
+        <a class="nav__link" href="index.html#story" data-i18n="nav.story">Our Story</a>
+        <a class="nav__link" href="program.html" data-i18n="nav.program">Schedule</a>
+        <a class="nav__link" href="travel.html" data-i18n="nav.travel">Location &amp; Travel</a>
+        <a class="nav__link nav__link--active" data-page="guests.html" href="guests.html" aria-current="page" data-i18n="nav.guests">Guest Corner</a>
+      </div>
+      <div class="navbar__actions">
+        <div class="language-switcher" role="group" aria-label="Choose language">
+          <button class="language-switcher__button" type="button" data-language="en" aria-label="English">EN</button>
+          <button class="language-switcher__button" type="button" data-language="it" aria-label="Italian">IT</button>
+          <button class="language-switcher__button" type="button" data-language="hu" aria-label="Hungarian">HU</button>
+        </div>
+        <button class="mobile-menu__button" type="button" aria-expanded="false" aria-label="Toggle menu"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a class="mobile-menu__link" href="index.html#story" data-i18n="nav.story">Our Story</a>
+      <a class="mobile-menu__link" href="program.html" data-i18n="nav.program">Schedule</a>
+      <a class="mobile-menu__link" href="travel.html" data-i18n="nav.travel">Location &amp; Travel</a>
+      <a class="mobile-menu__link mobile-menu__link--active" data-page="guests.html" href="guests.html" aria-current="page" data-i18n="nav.guests">Guest Corner</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section section--page guest-corner">
+      <header class="section__header">
+        <span class="section__tag" data-i18n="guest.tag">Patrik &amp; Francesca • March 5, 2027</span>
+        <h1 class="section__title" data-i18n="guest.title">Guest Corner</h1>
+        <div class="section__rule"></div>
+      </header>
+      <div class="guest-grid">
+        <article class="info-card guest-card">
+          <div>
+            <p class="guest-card__timing" data-i18n="guest.dietary.timing">Before the Wedding</p>
+            <div class="info-card__icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></div>
+            <h2 class="info-card__title" data-i18n="guest.dietary.title">Allergies &amp; Dietary Needs</h2>
+            <p class="info-card__text" data-i18n="guest.dietary.text">Please let us know about any food allergies or dietary requirements ahead of time. Sharing them early helps us plan the menu and make sure everyone is well taken care of throughout the celebration.</p>
+          </div>
+          <a class="button guest-card__action" href="https://forms.gle/V7TpHXp1kcBoMt3G9" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+            <span data-i18n="guest.dietary.button">Share Your Dietary Needs</span>
+          </a>
+        </article>
+
+        <article class="info-card guest-card">
+          <div>
+            <p class="guest-card__timing" data-i18n="guest.photos.timing">On the Wedding Day • March 5, 2027</p>
+            <div class="info-card__icon"><i class="fa-solid fa-camera-retro" aria-hidden="true"></i></div>
+            <h2 class="info-card__title" data-i18n="guest.photos.title">Share Wedding Day Pictures</h2>
+            <p class="info-card__text" data-i18n="guest.photos.text">Capture candid shots, celebration moments, photobooth fun, and Polaroids, then upload them to our shared Google Photos album on the wedding day. We’d love to see the day through your eyes!</p>
+          </div>
+          <div class="guest-card__sharing">
+            <a class="button guest-card__action" href="https://photos.app.goo.gl/uEW19UkAcS4enzAo9" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-images" aria-hidden="true"></i>
+              <span data-i18n="guest.photos.button">Open Shared Photo Album</span>
+            </a>
+            <div class="guest-card__qr">
+              <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+              <span data-i18n="guest.photos.qr">Album QR code coming soon</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__names">Patrik &amp; Francesca</p>
+    <p class="footer__date">March 5, 2027 • Lecce, Italy</p>
+    <p class="footer__copyright">&copy; 2027 Patrik &amp; Francesca. <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

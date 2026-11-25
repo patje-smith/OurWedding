@@ -8,7 +8,7 @@ A static, modular wedding website for GitHub Pages. The default language is Engl
 index.html          Hero, countdown, Our Story, and the combined travel distance card
 program.html        Wedding-day timeline
 travel.html         Flights, accommodation, and map link
-gallery.html        Photo gallery
+guests.html         Dietary needs and shared wedding-day photos
 css/variables.css   Design tokens: colors, fonts, radius, shadows
 css/main.css        Responsive BEM styles and layout
 js/app.js           Mobile menu, active navigation, and module startup

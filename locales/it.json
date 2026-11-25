@@ -1,5 +1,5 @@
 {
-  "nav.story": "La Nostra Storia", "nav.program": "Programma", "nav.travel": "Posizione e Viaggio",
+  "nav.story": "La Nostra Storia", "nav.program": "Programma", "nav.travel": "Posizione e Viaggio", "nav.guests": "Area Ospiti",
   "hero.subtitle": "Ci sposiamo", "hero.date": "5 Marzo 2027", "hero.cta": "Vedi Posizione e Dettagli",
   "timer.days": "Giorni", "timer.hours": "Ore", "timer.minutes": "Minuti", "timer.seconds": "Secondi",
   "story.tag": "Benvenuti", "story.title": "La Nostra Storia", "story.quote": "Questa volta, senza biglietto di ritorno.",
@@ -21,5 +21,8 @@
   "travel.tag": "Puglia, Italia", "travel.title": "Posizione e Viaggio", "travel.flights.title": "Voli per la Puglia", "travel.flights.desc": "Gli aeroporti più vicini sono Brindisi (BDS) a circa 30 minuti e Bari (BRI) a circa 1,5 ore da Lecce. Entrambi offrono ottimi collegamenti con molte città europee.",
   "travel.hotels.title": "Soggiornare a Lecce", "travel.hotels.desc": "Lecce offre una vasta scelta di boutique hotel, B&B e autentiche Masserie. Consigliamo di alloggiare nel Centro Storico per vivere appieno l'atmosfera.",
   "travel.lecce.title": "Scopri Lecce", "travel.lecce.desc": "Famosa per i suoi edifici barocchi in pietra leccese, la cucina tipica e i vicoli affascinanti. Approfittatene per esplorare la meravigliosa Puglia!", "travel.mapbtn": "Apri in Google Maps",
+  "guest.tag": "Patrik & Francesca • 5 marzo 2027", "guest.title": "Area Ospiti",
+  "guest.dietary.timing": "Prima del matrimonio", "guest.dietary.title": "Allergie e preferenze alimentari", "guest.dietary.text": "Fateci sapere in anticipo se avete allergie alimentari o esigenze dietetiche. Conoscendole per tempo, potremo organizzare il menu e assicurarci che tutti siano accolti al meglio durante i festeggiamenti.", "guest.dietary.button": "Comunica le tue esigenze",
+  "guest.photos.timing": "Il giorno del matrimonio • 5 marzo 2027", "guest.photos.title": "Condividi le foto del matrimonio", "guest.photos.text": "Scattate foto spontanee, immortalate i momenti di festa, il photobooth e le Polaroid, poi caricatele nel nostro album condiviso di Google Foto proprio il giorno del matrimonio. Non vediamo l'ora di rivivere la giornata attraverso i vostri occhi!", "guest.photos.button": "Apri l'album fotografico", "guest.photos.qr": "Codice QR dell'album in arrivo",
   "footer.rights": "Tutti i diritti riservati."
 }
