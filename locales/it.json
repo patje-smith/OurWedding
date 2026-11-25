@@ -1,5 +1,5 @@
 {
-  "nav.story": "La Nostra Storia", "nav.program": "Programma", "nav.travel": "Posizione e Viaggio", "nav.gallery": "Galleria",
+  "nav.story": "La Nostra Storia", "nav.program": "Programma", "nav.travel": "Posizione e Viaggio",
   "hero.subtitle": "Ci sposiamo", "hero.date": "5 Marzo 2027", "hero.cta": "Vedi Posizione e Dettagli",
   "timer.days": "Giorni", "timer.hours": "Ore", "timer.minutes": "Minuti", "timer.seconds": "Secondi",
   "story.tag": "Benvenuti", "story.title": "La Nostra Storia", "story.quote": "Questa volta, senza biglietto di ritorno.",
@@ -21,5 +21,5 @@
   "travel.tag": "Puglia, Italia", "travel.title": "Posizione e Viaggio", "travel.flights.title": "Voli per la Puglia", "travel.flights.desc": "Gli aeroporti più vicini sono Brindisi (BDS) a circa 30 minuti e Bari (BRI) a circa 1,5 ore da Lecce. Entrambi offrono ottimi collegamenti con molte città europee.",
   "travel.hotels.title": "Soggiornare a Lecce", "travel.hotels.desc": "Lecce offre una vasta scelta di boutique hotel, B&B e autentiche Masserie. Consigliamo di alloggiare nel Centro Storico per vivere appieno l'atmosfera.",
   "travel.lecce.title": "Scopri Lecce", "travel.lecce.desc": "Famosa per i suoi edifici barocchi in pietra leccese, la cucina tipica e i vicoli affascinanti. Approfittatene per esplorare la meravigliosa Puglia!", "travel.mapbtn": "Apri in Google Maps",
-  "gallery.tag": "Ricordi", "gallery.title": "Galleria Fotografica", "footer.rights": "Tutti i diritti riservati."
+  "footer.rights": "Tutti i diritti riservati."
 }

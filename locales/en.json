@@ -1,5 +1,5 @@
 {
-  "nav.story": "Our Story", "nav.program": "Schedule", "nav.travel": "Location & Travel", "nav.gallery": "Gallery",
+  "nav.story": "Our Story", "nav.program": "Schedule", "nav.travel": "Location & Travel",
   "hero.subtitle": "We are getting married", "hero.date": "March 5, 2027", "hero.cta": "View Location & Details",
   "timer.days": "Days", "timer.hours": "Hours", "timer.minutes": "Minutes", "timer.seconds": "Seconds",
   "story.tag": "Welcome", "story.title": "Our Story", "story.quote": "This time, with no return ticket.",
@@ -21,5 +21,5 @@
   "travel.tag": "Puglia, Italy", "travel.title": "Location & Travel Info", "travel.flights.title": "Flights to Puglia", "travel.flights.desc": "The closest airports are Brindisi (BDS), approximately 30 minutes away, and Bari (BRI), approximately 1.5 hours away from Lecce. Both airports offer excellent direct flight connections across Europe.",
   "travel.hotels.title": "Stay in Lecce", "travel.hotels.desc": "Lecce offers a wide selection of boutique hotels, B&Bs, and authentic Masserias. We recommend staying near the historic center (Centro Storico) for the best experience.",
   "travel.lecce.title": "Discover Lecce", "travel.lecce.desc": "Famous for its golden baroque architecture, delicious cuisine, and charming streets. Feel free to extend your stay and explore Puglia!", "travel.mapbtn": "Open in Google Maps",
-  "gallery.tag": "Memories", "gallery.title": "Photo Gallery", "footer.rights": "All rights reserved."
+  "footer.rights": "All rights reserved."
 }

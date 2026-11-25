@@ -1,5 +1,5 @@
 {
-  "nav.story": "Történetünk", "nav.program": "Program", "nav.travel": "Helyszín és Utazás", "nav.gallery": "Galéria",
+  "nav.story": "Történetünk", "nav.program": "Program", "nav.travel": "Helyszín és Utazás",
   "hero.subtitle": "Összeházasodunk", "hero.date": "2027. március 5.", "hero.cta": "Helyszín és Részletek",
   "timer.days": "Nap", "timer.hours": "Óra", "timer.minutes": "Perc", "timer.seconds": "Másodperc",
   "story.tag": "Üdvözlünk", "story.title": "Történetünk", "story.quote": "Ezúttal visszaútjegy nélkül.",
@@ -21,5 +21,5 @@
   "travel.tag": "Puglia, Olaszország", "travel.title": "Helyszín és Utazás", "travel.flights.title": "Repülés Pugliába", "travel.flights.desc": "A legközelebbi repülőterek Brindisi (BDS) kb. 30 perc, és Bari (BRI) kb. 1,5 óra autóútra Lecce városától. Mindkét repülőtérre jó közvetlen járatok indulnak Európa-szerte.",
   "travel.hotels.title": "Szállás Leccében", "travel.hotels.desc": "Lecce számos csodás boutique hotelt, B&B-t és autentikus Masseriát kínál. Javasoljuk, hogy a történelmi belvárosban (Centro Storico) foglaljatok szállást.",
   "travel.lecce.title": "Fedezd fel Leccét", "travel.lecce.desc": "Híres az aranyló barokk épületeiről, finom ételeiről és hangulatos utcáiról. Nyugodtan hosszabbítsátok meg az utazást, és fedezzétek fel Pugliát!", "travel.mapbtn": "Megnyitás Google Maps-en",
-  "gallery.tag": "Emlékek", "gallery.title": "Fotógaléria", "footer.rights": "Minden jog fenntartva."
+  "footer.rights": "Minden jog fenntartva."
 }
