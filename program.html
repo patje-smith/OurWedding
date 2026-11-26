@@ -45,42 +45,85 @@
           <h1 class="section__title" data-i18n="program.title">The Schedule</h1>
           <div class="section__rule"></div>
         </header>
+        <section class="venue-grid" aria-label="Wedding venues">
+          <article class="venue">
+            <svg class="venue__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <use href="images/icons.svg#icon-heart" />
+            </svg>
+            <p class="venue__eyebrow" data-i18n="program.venue1.label">The Ceremony</p>
+            <p class="venue__time"><time>11:30</time></p>
+            <h2 class="venue__name" data-i18n="program.venue1.name">Kingdom Hall</h2>
+            <p class="venue__address">
+              <a href="https://maps.google.com/?q=VIA%20UGO%20LA%20MALFA%20SNC%2C%2073012%20CAMPI%20SALENTINA%20LE" target="_blank" rel="noopener noreferrer" data-i18n="program.venue1.address">Via Ugo La Malfa SNC, 73012 Campi Salentina (LE)</a>
+            </p>
+            <a class="venue__map-link" href="https://maps.google.com/?q=VIA%20UGO%20LA%20MALFA%20SNC%2C%2073012%20CAMPI%20SALENTINA%20LE" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="program.viewLocation">View Location</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+          <article class="venue">
+            <svg class="venue__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <use href="images/icons.svg#icon-party" />
+            </svg>
+            <p class="venue__eyebrow" data-i18n="program.venue2.label">Reception &amp; Party</p>
+            <p class="venue__time"><time>13:30</time></p>
+            <h2 class="venue__name" data-i18n="program.venue2.name">Villa Marchesi</h2>
+            <p class="venue__address">
+              <a href="https://maps.google.com/?q=SP120%2C%2073051%20Novoli%20%28LE%29" target="_blank" rel="noopener noreferrer" data-i18n="program.venue2.address">SP120, 73051 Novoli (LE)</a>
+            </p>
+            <a class="venue__map-link" href="https://maps.google.com/?q=SP120%2C%2073051%20Novoli%20%28LE%29" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="program.viewLocation">View Location</span><span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </section>
+        <header class="itinerary__header">
+          <span class="section__tag" data-i18n="program.itineraryTag">The day, together</span>
+          <h2 class="itinerary__title" data-i18n="program.itineraryTitle">Itinerary</h2>
+          <div class="section__rule"></div>
+        </header>
         <div class="timeline">
-          <article class="timeline__item timeline__item--left">
-            <div class="timeline__marker"><i class="fa-solid fa-ring" aria-hidden="true"></i></div>
-            <div class="timeline__card">
-              <time class="timeline__time">11:30</time>
+          <article class="timeline__item timeline__item--icon-left">
+            <div class="timeline__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><use href="images/icons.svg#icon-heart" /></svg>
+            </div>
+            <span class="timeline__node" aria-hidden="true"></span>
+            <div class="timeline__content">
               <h2 class="timeline__title" data-i18n="program.item1.title">Ceremony</h2>
-              <p class="timeline__description" data-i18n="program.item1.desc">The Bible-based wedding talk and official ceremony.</p>
-              <p class="timeline__location"><a href="https://www.google.com/maps/search/?api=1&amp;query=VIA%20UGO%20LA%20MALFA%20SNC%2C%2073012%20CAMPI%20SALENTINA%20LE" target="_blank" rel="noopener noreferrer" data-i18n="program.item1.location">Kingdom Hall</a></p>
             </div>
           </article>
-          <article class="timeline__item timeline__item--right">
-            <div class="timeline__marker"><i class="fa-solid fa-martini-glass" aria-hidden="true"></i></div>
-            <div class="timeline__card">
-              <time class="timeline__time">13:30</time>
+          <article class="timeline__item timeline__item--icon-right">
+            <div class="timeline__content">
               <h2 class="timeline__title" data-i18n="program.item2.title">Drinks</h2>
-              <p class="timeline__location"><a href="https://www.google.com/maps/search/?api=1&amp;query=SP120%2C%2073051%20Novoli%20%28LE%29" target="_blank" rel="noopener noreferrer" data-i18n="program.item2.location">Villa Marchesi</a></p>
+            </div>
+            <span class="timeline__node" aria-hidden="true"></span>
+            <div class="timeline__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><use href="images/icons.svg#icon-drink" /></svg>
             </div>
           </article>
-          <article class="timeline__item timeline__item--left">
-            <div class="timeline__marker"><i class="fa-solid fa-utensils" aria-hidden="true"></i></div>
-            <div class="timeline__card">
-              <time class="timeline__time">14:30</time>
+          <article class="timeline__item timeline__item--icon-left">
+            <div class="timeline__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><use href="images/icons.svg#icon-cake-slice" /></svg>
+            </div>
+            <span class="timeline__node" aria-hidden="true"></span>
+            <div class="timeline__content">
               <h2 class="timeline__title" data-i18n="program.item3.title">Lunch</h2>
             </div>
           </article>
-          <article class="timeline__item timeline__item--right">
-            <div class="timeline__marker"><i class="fa-solid fa-cake-candles" aria-hidden="true"></i></div>
-            <div class="timeline__card">
+          <article class="timeline__item timeline__item--icon-right">
+            <div class="timeline__content">
               <h2 class="timeline__title" data-i18n="program.item4.title">Cake</h2>
             </div>
+            <span class="timeline__node" aria-hidden="true"></span>
+            <div class="timeline__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><use href="images/icons.svg#icon-food" /></svg>
+            </div>
           </article>
-          <article class="timeline__item timeline__item--left">
-            <div class="timeline__marker"><i class="fa-solid fa-music" aria-hidden="true"></i></div>
-            <div class="timeline__card">
+          <article class="timeline__item timeline__item--icon-left">
+            <div class="timeline__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><use href="images/icons.svg#icon-party" /></svg>
+            </div>
+            <span class="timeline__node" aria-hidden="true"></span>
+            <div class="timeline__content">
               <h2 class="timeline__title" data-i18n="program.item5.title">Party</h2>
-              <p class="timeline__description" data-i18n="program.item5.desc">Celebration and dancing.</p>
             </div>
           </article>
         </div>

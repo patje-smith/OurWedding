@@ -16,6 +16,7 @@ js/journey.js       CSV-driven combined travel distance card
 js/i18n.js          JSON loading and localStorage language persistence
 js/countdown.js     March 5, 2027 countdown for the home page
 locales/*.json      English, Italian, and Hungarian translations
+images/icons.svg    Shared SVG symbols used by the schedule
 ```
 
 The home page travel distance card reads the CSV travel log in the repository root. It locates the table header by its column names, so summary rows above the table are ignored.
@@ -55,6 +56,7 @@ ES modules require a web server. GitHub Pages provides this automatically. For l
 4. Add visual styles using BEM names in `css/main.css`.
 5. Place colors and fonts in `css/variables.css` when reused.
 6. Load page-specific behavior in `js/app.js` or a dedicated module; do not add it inline.
+7. Keep schedule icon definitions in `images/icons.svg` and reference them with SVG `<use>` elements.
 
 ## Instructions for Future AI Sessions
 
