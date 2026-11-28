@@ -1,4 +1,14 @@
 :root {
+  --color-sage-50: #f7f8f3;
+  --color-sage-100: #edf1e6;
+  --color-sage-200: #dde5d4;
+  --color-sage-300: #c5cfb8;
+  --color-sage-400: #a3b292;
+  --color-sage-500: #7e906f;
+  --color-sage-600: #64745a;
+  --color-sage-700: #4d5a45;
+  --color-sage-800: #35402f;
+  --color-sage-900: #253020;
   --color-sand-50: #fdfbf7;
   --color-sand-100: #f7f3eb;
   --color-sand-200: #efe6d5;
@@ -12,10 +22,6 @@
   --color-stone-700: #44403c;
   --color-stone-800: #292524;
   --color-stone-900: #1c1917;
-  --color-terracotta-500: #bc6c25;
-  --color-terracotta-600: #a3571a;
-  --color-gold-400: #d4af37;
-  --color-gold-500: #aa7c11;
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Montserrat", sans-serif;
   --shadow-sm: 0 1px 3px rgba(41, 37, 36, 0.08);
