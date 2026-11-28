@@ -20,7 +20,7 @@ button { font: inherit; }
 .mobile-menu__button { display: none; border: 0; background: transparent; color: var(--color-stone-700); padding: .5rem; cursor: pointer; }
 .mobile-menu { display: none; }
 
-.hero { min-height: 100vh; padding: 7rem 1rem 4rem; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url('../images/sunset.jpeg') 35% 28%/cover no-repeat; }
+.hero { position: relative; min-height: 100vh; padding: 7rem 1rem 4rem; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url('../images/sunset.jpeg') 35% 28%/cover no-repeat; }
 .hero__content { max-width: 64rem; }
 .hero__subtitle { margin: 0 0 1.25rem; font-family: var(--font-serif); font-size: 1.35rem; font-style: italic; letter-spacing: .18em; text-transform: uppercase; color: var(--color-sand-200); }
 .hero__title { margin: 0; font-family: var(--font-serif); font-size: clamp(3.25rem, 9vw, 7rem); font-weight: 300; line-height: 1; letter-spacing: .04em; text-shadow: 0 4px 12px rgba(0,0,0,.2); }
@@ -33,6 +33,7 @@ button { font: inherit; }
 .hero__time-value { font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.25rem); color: var(--color-sand-200); }
 .hero__time-label { margin-top: .25rem; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: #d6d3d1; }
 .hero__cta-wrap { margin-top: 1.75rem; }
+.hero__motto { position: absolute; inset-inline: 1rem; bottom: clamp(2rem, 5vh, 3.5rem); margin: 0; color: var(--color-sand-100); font-family: var(--font-serif); font-size: clamp(1.35rem, 3vw, 2rem); font-style: italic; letter-spacing: .04em; line-height: 1.3; text-align: center; text-shadow: 0 2px 8px rgba(0,0,0,.5); }
 
 .button { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; border: 0; border-radius: var(--radius-full); padding: .85rem 2rem; background: rgba(227,210,180,.92); color: var(--color-stone-900); font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; box-shadow: var(--shadow-md); transition: var(--transition); }
 .button:hover { background: #d5b98f; transform: translateY(-2px); }
@@ -139,6 +140,7 @@ button { font: inherit; }
   .hero__meta { flex-direction: column; align-items: center; gap: .35rem; }
   .hero__meta-dot { display: none; }
   .hero__countdown { padding: .85rem; }
+  .hero__motto { bottom: 2rem; font-size: clamp(1.3rem, 6vw, 1.7rem); }
   .story { grid-template-columns: 1fr; gap: 2rem; }
   .story__gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 20rem 13rem; }
   .story__image-wrap--featured { grid-column: 1 / 3; grid-row: 1; }
